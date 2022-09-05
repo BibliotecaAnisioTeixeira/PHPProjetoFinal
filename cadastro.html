@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Cadastre-se</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="imagens/favicon.png" />
+        <link rel="stylesheet" href="css/cadastro.css" />
+  </head>
+  <body>
+    <form action="cadastro.php" method="post">
+      <div class="main-login">
+        <div class="left-login">
+          <h1 data-text="Crie sua conta">Crie sua conta<br /></h1>
+          <h2 data-text="para ter acesso a dezenas de livros">para ter acesso a dezenas de livros</h2>
+          <img
+            src="imagens/reading-create.png"
+            class="left-login-image"
+            alt="leitora"
+          />
+        </div>
+        <div class="right-login">
+          <div class="card-login">
+            <h1>Crie sua Conta</h1>
+            <div class="textfield">
+              <label for="usuario">Usuário</label>
+              <input type="text" name="nome" placeholder="Digite seu nome" required />
+            </div>
+            <div class="textfield">
+              <label for="email">Email</label>
+              <input type="text" name="email" placeholder="Digite seu email" required />
+            </div>
+            <div class="textfield">
+              <label for="senha"> Crie sua senha</label>
+              <input type="password" name="senha" placeholder="Digite sua senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="A senha deve conter pelo menos um caracter maiúsculo, um minúsculo, um número e no mínimo oito caracteres" required>
+            </div>
+            <button class="btn-login">Cadastre-se</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

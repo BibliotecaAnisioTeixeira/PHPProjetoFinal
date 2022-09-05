@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="imagens/favicon.png" />
+        <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <form action="login.php" method="post">
+      <div class="main-login">
+        <div class="left-login">
+          <h1 data-text="Faça login">Faça login<br /></h1>
+          <h2 data-text="e leia a vontade...">e leia a vontade...</h2>
+          <img
+            src="imagens/reader-animate.svg"
+            class="left-login-image"
+            alt="leitora"
+          />
+        </div>
+        <div class="right-login">
+          <div class="card-login">
+            <h1>Login</h1>
+            <div class="textfield">
+              <label for="usuario">Email</label>
+              <input type="text" name="email" placeholder="Digite seu email" />
+            </div>
+            <div class="textfield">
+              <label for="senha">Senha</label>
+              <input type="password" name="senha" placeholder="Digite sua senha" />
+            </div>
+            <button class="btn-login">Login</button>
+            <p>Ainda não tem uma conta? Cadastre-se <a href="cadastro.html">aqui</a></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
